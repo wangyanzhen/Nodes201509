@@ -8,7 +8,6 @@
 var oTab = document.getElementById("tab");
 var oLis = oTab.getElementsByTagName("li");
 var oDivs = oTab.getElementsByTagName("div");
-
 //2、制定一个功能方法实现我们的选项卡切换
 function tabChange(curIndex) {
     //1)首先把三个li和对应的div的class都清空
