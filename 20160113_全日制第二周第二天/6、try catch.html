@@ -3,8 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style type="text/css">
+        body,ul,li{
+            margin:0;
+            padding:0;
+            list-style: none;
+        }
+        #ul1{
+            width:300px;
+            border: 1px solid #999999;
+            padding:10px;
+            margin:20px auto;
+
+        }
+        #ul1 li{
+           position: relative;
+            height:35px;
+            line-height: 35px;
+            padding-left: 25px;
+            /*一行文字超出后自动进行截取*/
+            text-overflow: ellipsis;
+            /*text-overflow：clip;*/
+            /*截取后以...作为省略*/
+            overflow: hidden;
+            white-space: nowrap;
+            /*强制不换行*/
+        }
+        #ul1 li span{
+            position: absolute;
+            top:6px;
+            left:0;
+            width:21px;
+            height:21px;
+            line-height: 20px;
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #999999;
+            border-radius: 5px;
+            /*在ie6~8下不兼容*/
+
+        }
+        #ul1 li span.bg{
+            background: #fa5889;
+            color:#fff;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
+<ul id="ul1">
+    <li>
+        <span class="bg">01</span>习近平习近平习近平习近平习近习近平习近平习近平习近平习近平习近平习近平
+    </li>
+    <li>
+        <span class="bg">02</span>李克强李克强李克强李克强李克强李克强李克强李克强李克强李克强
+    </li>
+    <li>
+        <span class="bg">03</span>李克强李克强李克强李克强李克强李克强李克强李克强李克强李克强
+    </li>
+    <li>
+        <span class="bg">04</span>李克强李克强李克强李克强李克强李克强李克强李克强李克强李克强
+    </li>
+    <li>
+        <span class="bg">025</span>李克强李克强李克强李克强李克强李克强李克强李克强李克强李克强
+    </li>
+    <li>
+        <span class="bg">06</span>李克强李克强李克强李克强李克强李克强李克强李克强李克强李克强
+    </li>
+    <li>
+        <span class="bg">07</span>李克强李克强李克强李克强李克强李克强李克强李克强李克强李克强
+    </li>
+</ul>
 <script type="text/javascript">
     //浏览器异常信息捕获:try catch finally
     //    try {
