@@ -115,8 +115,10 @@
     //2、实现鼠标滑过每一个li有一个背景颜色
     function changeBg() {
         for (var i = 0; i < oLis.length; i++) {
+//            oLis[i];
+            oLis[i].zhufeng=i;
             oLis[i].onmouseover = function () {
-                this.className = "bg";
+                oLis[oLis[i].zhufeng].className = "bg";
             };
             oLis[i].onmouseout = function () {
                 this.className = "";

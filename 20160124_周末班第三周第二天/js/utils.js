@@ -40,7 +40,7 @@ utils.getCss = function getCss(curEle, attr) {
             val = curEle.currentStyle[attr];
         }
     }
-    reg = /^-?\d+(\.\d+)?(px|pt|em|rem)?$/;
+    var reg = /^-?\d+(\.\d+)?(px|pt|em|rem)?$/;
     return reg.test(val) ? parseFloat(val) : val;
 };
 
